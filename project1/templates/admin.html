@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+   <body>
+      <table border = 1>
+      <tr>
+               <th> User Name </th>
+               <th> Password </th>
+               <th> "Time" </th>
+            </tr>
+         {% for res in result %}
+            <tr>
+               <td> {{ res.name }} </td>
+               <td> {{ res.passw }} </td>
+               <td> {{ res.time }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
